@@ -1,0 +1,343 @@
+                               ## Operators_Exercise ##
+
+
+
+Arithmetic Operators
+(+ - * / // % **)
+
+1. Write a program to add, subtract, multiply, and divide two numbers.
+
+a=45
+b=3
+print("Add:",a+b,"Subtract:",a-b,"Multiply:",a*b,"Divide:",a/b)
+Output =  Add: 48 Subtract: 42 Multiply: 135 Divide: 15.0
+
+2. Find the remainder when a number is divided by 7.
+
+num=59
+print("Remainder:",num%7)
+Output =  Remainder: 3
+
+3. Calculate square and cube of a number using **.
+
+print("Square:",4**2) 
+Output =  Square: 16
+        
+print("Cube:",4**3)
+Output =  Cube: 64
+
+4. Convert total days into years, months, and remaining days using arithmetic operators.
+
+TD = 756
+Y=TD//365
+Rd=TD%365
+M=Rd//30
+Rdays=Rd%30
+print("Total Days:",TD,"Years:",Y,"Remaining days:",Rd,"Months:",M,
+      "Final remainding days:",Rdays)
+
+Output =  Total Days: 756 Years: 2 Remaining days: 26 Months: 0 Final remainding days: 26
+
+5. Swap two numbers without using a third variable (use arithmetic operators).
+
+a = 5
+b = 10
+print("Before:", a, b)
+a, b = b, a
+print("After:", a, b)
+
+
+6. Find the last digit of a number using %.
+
+num=476
+print("Last digit of the number:",num%470)
+Output =  Last digit of the number: 6
+
+
+7. Reverse a 3-digit number using arithmetic operators only.
+
+a=867
+b=99
+print("Number:",a,      
+ "Reverse of this number:",a-b)
+Output =  Number: 867 Reverse of this number: 768
+
+
+8. Find sum of digits of a number using % and //.
+
+
+
+
+
+Relational / Comparison Operators 
+(== != > < >= <=) 
+
+1. Write a program to check if two numbers are equal.
+a=675
+b=567
+print("Is these two numbers are equal:",a==b)
+Output =  Is these two numbers are equal: False
+
+
+2. Check whether a number is greater than 100. 
+a=675
+print("Is this number is greater than 100:",a>100)
+Output =  Is this number is greater than 100: True
+
+
+3. Compare two numbers and print the greater one. 
+a=675
+b=567
+print("Greater number is:",a   ,  a>b)
+Greater number is: 675 True
+
+
+4. Check if a number lies between 10 and 50. 
+num = int(input("Enter a number: "))
+print(10<=num<=50)
+
+Output =  Enter a number: 35
+          True
+
+
+5. Check whether a number is negative, positive, or zero.
+
+
+a=int(input("Enter a number:"))
+print("Positive:",a>0)
+print("Negative:",a<0)
+print("Zero:",a==0)
+
+Output =  Enter a number:45
+          Positive: True
+          Negative: False
+          Zero: False
+
+
+
+Logical Operators 
+(and or not) 
+
+1. Check whether a number is between 20 and 50. 
+
+num=input("Enter a number:")
+print(20<num and num<50)
+Output =  Enter a number:78
+          False
+
+
+2. Check if a student passed (marks ≥ 40) and attendance ≥ 75%. 
+
+M=int(input("Enter marks:"))
+A=float(input("Enter attendence:"))
+print("Passed:",M>40 and A>75)
+Output =  Enter marks:56
+          Enter attendence:78
+          Passed: True 
+
+
+3. Check if a number is divisible by both 3 and 5.
+
+a= int(input("Enter a number:"))
+print(a%3==0 and a%5==0)
+Output =  Enter a number:14
+          False
+ 
+
+4. Check if a number is divisible by 3 or 7.
+ 
+a= int(input("Enter a number:"))
+print(a%3==0 or a%7==0)
+Output = Enter a number:15
+         True 
+
+
+5. Write a program using not to reverse a boolean condition.
+
+a=True
+print(not a)
+Output =  False
+
+
+Assignment Operators 
+(= += -= *= /= //= %= **=) 
+
+1. Take a number and increase it by 10 using +=. 
+
+a=95
+a+=10
+print(a)
+Output =  105
+
+
+2. Multiply a number by 5 using *=.
+
+a=4
+a*=5
+print(a)
+Output =  20
+
+ 
+3. Reduce a number by 20 using -=. 
+
+a=50
+a-=20
+print(a)
+Output =  30
+
+
+4. Square a number using **=. 
+
+a=7
+a**=2
+print(a)
+Output =  49
+
+
+5. Divide a number by 3 using /=.
+
+a=18
+a/=3
+print(a)
+Output =  6.0
+
+
+Bitwise Operators 
+(& | ^ ~ << >>) 
+
+1. Perform bitwise AND on two numbers. 
+
+a=14
+b=13
+print(a & b)
+Output =  12
+
+
+2. Perform bitwise OR on two numbers. 
+
+a=16
+b=15
+print(a | b)
+Output =  31
+
+
+3. Perform bitwise XOR on two numbers. 
+
+a=9
+b=16
+print(a ^ b)
+Output =  25
+
+
+4. Left shift a number by 2 positions. 
+
+print(9<<2)
+Output =  36
+
+
+5. Right shift a number by 1 position. 
+
+print(8>>1)
+Output =  4
+
+
+6. Find complement of a number using ~. 
+
+a=14
+print(~a+4)
+Output = -11
+ 
+
+7. Check if a number is even using bitwise operator. 
+
+a = 146
+print("Even:",a%2==0 & a%2==0)
+Output =  Even: True
+
+
+Membership Operators 
+(in , not in) 
+
+1. Check whether a number exists in a list. 
+
+a= {3,4,5}
+print(3 in a)
+Output =   True
+
+
+2. Check whether a character exists in a string. 
+
+a= "RohanJangid"
+print("Jan" in a)
+Output =  True
+
+
+3. Check whether a word exists in a sentence. 
+
+a= "My name is Bhoomika Sharma"
+print("Sharma" in a)
+Output =   True
+
+
+4. Check whether a key exists in a dictionary. 
+
+d={"key1:10","key2:32"}
+print("key2:32" in d)
+Output =   True
+
+
+Identity Operators 
+(is , is not) 
+
+1. Compare two variables using is. 
+
+a=356
+b=653
+print(a is b)
+Output =   False
+
+
+2. Check if two lists are pointing to the same memory location. 
+
+List1=[1,2,3]
+List2=[1,2,3]
+print(List1 == List2)
+Output =   True
+print(List1 is List2)
+Output =    False
+
+
+3. Create two identical lists and compare using == and is. 
+
+List1=[1,2,3]
+List2=List1
+print(List1 is List2)
+Output =   True
+
+
+4. Explain the difference between is and == using a program.
+
+Answer =>  The == operator compares the values of two variables,
+ while the is operator checks if two variables refer to the 
+exact same object in memory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
