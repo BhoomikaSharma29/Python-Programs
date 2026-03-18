@@ -40,12 +40,12 @@ Output =  Total Days: 756 Years: 2 Remaining days: 26 Months: 0 Final remainding
 
 5. Swap two numbers without using a third variable (use arithmetic operators).
 
-a = 5
-b = 10
-print("Before:", a, b)
-a, b = b, a
-print("After:", a, b)
-
+a = 10
+b = 20
+a = a + b # a becomes 30
+b = a - b # b becomes 10
+a = a - b # a becomes 20
+print("a:", a, "b:", b)
 
 6. Find the last digit of a number using %.
 
@@ -64,8 +64,13 @@ Output =  Number: 867 Reverse of this number: 768
 
 
 8. Find sum of digits of a number using % and //.
-
-
+num = 12345
+sum = 0
+while num > 0:
+ digit = num % 10
+ sum += digit
+ num = num // 10
+print(sum) # Output: 15
 
 
 
